@@ -7,12 +7,12 @@ const app = express();
 app.use(express.static(path.join(__dirname, "public")));
 app.use("/pdfs", express.static(path.join(__dirname, "public/pdfs"))); // ✅ Serve PDFs
 
-// Serve HTML files from the root directory
-app.get("/", (req, res) => res.sendFile(path.join(__dirname, "index.html")));
-app.get("/about", (req, res) => res.sendFile(path.join(__dirname, "about.html")));
-app.get("/projects", (req, res) => res.sendFile(path.join(__dirname, "projects.html")));
-app.get("/capstone", (req, res) => res.sendFile(path.join(__dirname, "capstone.html")));
-app.get("/contact", (req, res) => res.sendFile(path.join(__dirname, "contact.html"))); // ✅ Updated Contact Page Route
+// Define routes to serve HTML from the `views/` folder
+app.get("/", (req, res) => res.sendFile(path.join(__dirname, "views/index.html")));
+app.get("/about", (req, res) => res.sendFile(path.join(__dirname, "views/about.html")));
+app.get("/projects", (req, res) => res.sendFile(path.join(__dirname, "views/projects.html")));
+app.get("/capstone", (req, res) => res.sendFile(path.join(__dirname, "views/capstone.html")));
+app.get("/contact", (req, res) => res.sendFile(path.join(__dirname, "views/contact.html")));
 
 // Start the server
 const PORT = process.env.PORT || 3000;
