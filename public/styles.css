@@ -1,0 +1,386 @@
+/* General Page Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f8f1f1;
+}
+
+/* Navigation Bar */
+nav ul {
+    list-style: none;
+    background: #6b4c4c;
+    padding: 10px;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+/* Hero Section (Home Page) */
+.hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    height: 100vh;
+    background: linear-gradient(to right, #6b4c4c, #a27b7b);
+    color: white;
+}
+
+.hero .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Home Page - Profile Picture */
+.hero .profile-pic {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover; /* Ensures the image fills the space properly */
+    margin-bottom: 20px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* Heading and Text */
+.hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    max-width: 600px;
+    line-height: 1.5;
+}
+
+/* Personal Data Section */
+.personal-data {
+    padding: 50px 0;
+    text-align: center;
+    background: linear-gradient(to right, #6b4c4c, #a27b7b);
+    color: white;
+}
+
+.personal-data .container {
+    width: 80%;
+    margin: auto;
+    padding: 20px;
+    background: white;
+    color: #333;
+    border-radius: 10px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Personal Data Page - Avatar */
+.bio-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+/* Avatar Styling (Personal Data Page) */
+.bio-section .profile-pic {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    object-fit: cover; /* Ensures the image fills the space properly */
+    margin-bottom: 20px;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Section Styling */
+h2 {
+    font-size: 24px;
+    color: #6b4c4c;
+    border-bottom: 2px solid #a27b7b;
+    padding-bottom: 5px;
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+/* Skills, Education, and Philosophy Sections */
+.skills-section, .education-section, .philosophy-section, .contact-info {
+    margin-top: 30px;
+    text-align: left;
+}
+
+.skills-section ul {
+    list-style-type: square;
+    padding-left: 20px;
+}
+
+.skills-section li {
+    margin-bottom: 5px;
+    font-size: 16px;
+}
+
+/* Contact Info */
+.contact-info a {
+    color: #6b4c4c;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.contact-info a:hover {
+    text-decoration: underline;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 15px;
+    background: #6b4c4c;
+    color: white;
+    font-size: 14px;
+    margin-top: 30px;
+}
+
+/* Projects Section */
+.projects {
+    padding: 50px;
+    text-align: center;
+    background: #f8f1f1;
+}
+
+.projects .container {
+    width: 80%;
+    margin: auto;
+}
+
+.projects h1 {
+    font-size: 2.5rem;
+    color: #6b4c4c;
+    margin-bottom: 30px;
+}
+
+/* Grid Layout for Projects */
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    justify-content: center;
+}
+
+/* Project Cards */
+.project {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Project Image */
+.project-image {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.project img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Overlay Effect */
+.overlay {
+    position: absolute;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.7);
+    color: white;
+    width: 100%;
+    text-align: center;
+    padding: 15px;
+    font-size: 1rem;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+/* Show overlay on hover */
+.project:hover .overlay {
+    opacity: 1;
+}
+
+/* Hover Effects */
+.project:hover img {
+    transform: scale(1.05);
+}
+
+/* Capstone Project Page */
+.capstone {
+    padding: 50px;
+    text-align: center;
+    background: linear-gradient(to right, #6b4c4c, #a27b7b);
+    color: white;
+}
+
+.capstone .container {
+    width: 80%;
+    margin: auto;
+    padding: 20px;
+    background: white;
+    color: #333;
+    border-radius: 10px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Project Description */
+.capstone-description {
+    text-align: left;
+    margin-top: 30px;
+}
+
+.capstone-description h2 {
+    font-size: 24px;
+    color: #6b4c4c;
+    border-bottom: 2px solid #a27b7b;
+    padding-bottom: 5px;
+    margin-bottom: 15px;
+}
+
+/* PDF Selection Section */
+.pdf-section {
+    margin-top: 30px;
+    text-align: center;
+}
+
+.pdf-section select {
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    background: #6b4c4c;  
+    color: white;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.pdf-section select:focus {
+    outline: none;
+    border-color: #a27b7b;
+}
+
+.pdf-section select:hover {
+    background: #a27b7b;  
+}
+
+/* Mockup Section */
+.mockup-section {
+    margin-top: 30px;
+    text-align: center;
+}
+
+.mockup-button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    background: #6b4c4c;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.mockup-button:hover {
+    background: #a27b7b;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 15px;
+    background: #6b4c4c;
+    color: white;
+    font-size: 14px;
+    margin-top: 30px;
+}
+/* Contact Page */
+.contact {
+    padding: 50px;
+    text-align: center;
+    background: linear-gradient(to right, #6b4c4c, #a27b7b);
+    color: white;
+}
+
+.contact .container {
+    width: 60%;
+    margin: auto;
+    padding: 20px;
+    background: white;
+    color: #333;
+    border-radius: 10px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Contact Info */
+.contact-info {
+    margin-top: 20px;
+    text-align: left;
+}
+
+.contact-info p {
+    margin: 10px 0;
+}
+
+.contact-info a {
+    color: #6b4c4c;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.contact-info a:hover {
+    text-decoration: underline;
+}
+
+/* Contact Form */
+.contact-form {
+    margin-top: 20px;
+    text-align: left;
+}
+
+.contact-form label {
+    display: block;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #6b4c4c;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.contact-form button {
+    display: block;
+    margin-top: 15px;
+    padding: 10px 15px;
+    background: #6b4c4c;
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.contact-form button:hover {
+    background: #a27b7b;
+}

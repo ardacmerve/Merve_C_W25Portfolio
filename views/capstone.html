@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Capstone Project - SportsUp</title>
+    <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+
+    <nav>
+        <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/about">About</a></li>
+            <li><a href="/projects">Projects</a></li>
+            <li><a href="/capstone">Capstone Project</a></li>
+            <li><a href="/contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <section class="capstone">
+        <div class="container">
+            <h1>SportsUp - Capstone Project</h1>
+
+            <div class="capstone-description">
+                <h2>Project Overview</h2>
+                <p>
+                    **SportsUp** is a mobile platform designed to connect players and sports watchers.
+                    Our system consists of two main modules:
+                </p>
+                <ul>
+                    <li><strong>Player System:</strong> Free users can find local matches and pitches, while premium users access advanced filters and chat features.</li>
+                    <li><strong>Watcher System:</strong> Free users discover match streaming locations, and premium users can reserve seating and receive early match notifications.</li>
+                </ul>
+                <p>
+                    Additional revenue is generated through in-app advertising, affiliate sales, and partnerships with local businesses
+                    (e.g., pubs, restaurants). The app also supports event organization for soccer tournaments.
+                </p>
+            </div>
+
+            <!-- PDF Selection -->
+            <div class="pdf-section">
+                <h2>Capstone Project Documents</h2>
+                <p>Select a document to view:</p>
+                <select id="pdfSelector" onchange="openPDF()">
+                    <option value="">-- Choose a Document --</option>
+                    <option value="/pdfs/COMP3059_F24_T07_Sports Up Project Summary.pdf">Project Summary</option>
+                    <option value="/pdfs/COMP3059_F24_T07_Sports Up Project Vision.docx.pdf">Project Vision</option>
+                    <option value="/pdfs/COMP3059_F24_T07_Project Requirements Analysis and Design.docx.pdf">Requirements Analysis & Design</option>
+                    <option value="/pdfs/COMP3059_W25_T07_Project Plan.docx.pdf">Project Plan</option>
+                    <option value="/pdfs/COMP3059_W25_T07_Project_Status_Report2.docx.pdf">Project Status Report</option>
+                </select>
+            </div>
+
+            <!-- Figma Mockup Link -->
+            <div class="mockup-section">
+                <h2>Mockup & UI Design</h2>
+                <p>Check out the design of our SportsUp app on Figma:</p>
+                <a href="https://www.figma.com/design/7P1PdYOOClbAAt6OTmTnso/Sports-Up-IOS?node-id=0-1&p=f&t=S8DuBljuQ1vGKIKB-0"
+                   target="_blank" class="mockup-button">View Figma Mockup</a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Merve Coskun.</p>
+    </footer>
+
+    <script>
+        function openPDF() {
+            var selectedPDF = document.getElementById("pdfSelector").value;
+            if (selectedPDF) {
+                window.open(selectedPDF, "_blank");
+            }
+        }
+    </script>
+
+</body>
+</html>
+
